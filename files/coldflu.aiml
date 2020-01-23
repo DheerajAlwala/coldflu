@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+        <pattern>hi</pattern>
+        <template>what is ur problem</template>
+    </category>
+    <category>
+        <pattern>* cold</pattern>
+        <template>How long ur suffering from cold(one day/week)</template>
+    </category>
+        <category>
+            <pattern>* one day</pattern>
+            <that>How long ur suffering from cold(one day/week)</that>
+            <template>Do you used any medicines</template>
+        </category>
+</aiml>

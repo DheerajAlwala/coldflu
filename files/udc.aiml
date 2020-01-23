@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+	<pattern>hi</pattern>
+	<template>what is your problem</template>
+</category>
+<category>
+    <pattern># cold</pattern>
+    <that>what is your problem</that>
+    <template>how long you are suffering from one day or week<think><set name="topic">cold</set></think></template>
+</category>
+<topic name="cold">
+<category>
+    <pattern>one day</pattern>
+    <that>how long you are suffering from one day or week</that>
+    <template>do you used any medicines.yes or no</template>
+</category>
+<category>
+    <pattern>one week</pattern>
+    <template><srai>one day</srai></template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>do you used any medicines.yes or no</that>
+    <template>did it given any relief.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>do you used any medicines.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have headache or bodyache</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>did it given any relief.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have headache or bodyache</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>did it given any relief.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have headache or bodyache</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that> let me ask you few questions regarding symptoms.do you have headache or bodyache</that>
+    <template>any sneezing or dry cough trouble.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>let me ask you few questions regarding symptoms.do you have headache or bodyache</that>
+    <template>any sneezing or dry cough trouble.yes or no</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>any sneezing or dry cough trouble.yes or no</that>
+    <template>do you have fever with intense pain and fatigue.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>any sneezing or dry cough trouble.yes or no</that>
+    <template>do you have fever with intense pain and fatigue.yes or no</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>do you have fever with intense pain and fatigue.yes or no</that>
+    <template>These type of diseases occur via hand to hand contact.the symptoms are related to flu which involve nose throat and lungs.you need to rest more than usual and should drink lots of fluids and follow well-balanced diet including fruits and vegetables.use medicines like Tylenol and Aspirin, for people age 19 and older,Cough suppressants, like Robitussin or expectorants</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>do you have fever with intense pain and fatigue.yes or no</that>
+    <template>It is a normal cold you need to take rest more rest than usual and should follow well-balanced diet it will recover within few days</template>
+</category>
+</topic>
+</aiml>
